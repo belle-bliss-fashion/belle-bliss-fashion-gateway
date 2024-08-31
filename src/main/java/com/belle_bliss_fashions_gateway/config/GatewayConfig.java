@@ -10,7 +10,7 @@ public class GatewayConfig {
     @Bean
     public RouteLocator customerRouteLocator(RouteLocatorBuilder builder){
         return builder.routes()
-                .route("belle-bliss-fashions-user-service-1",r->r.path("/belle-bliss-user-service/**")
+                .route("belle-bliss-fashion-user-service-1",r->r.path("/belle-bliss-user-service/**")
                         .uri("http://localhost:8001")).build();
     }
 }
